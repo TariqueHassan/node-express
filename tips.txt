@@ -1,0 +1,9 @@
+npm install express --save
+npm install morgan --save
+npm install body-parser --save
+
+Express Serve Static Files
+Express supports development of REST API server
+express support for http methods: app.all, app.get, app.put, app.post app.delete
+
+these methods can be used to construct a REST API 122
