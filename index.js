@@ -4,6 +4,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
 const dishRouter = require('./routes/dishRouter');
+const promoRouter = require('./routes/promoRouter');
 const hostname = 'localhost';
 const port = 3000;
 
@@ -13,6 +14,7 @@ app.use(bodyParser.json()); // whenever we need to use a middleware we write thi
                             // this allows to parse body of the request message which is in json file
 
 app.use('/dishes', dishRouter); // any request coming to /dishes will be handled by this second parameter dishRouter
+app.use('/promotions', promoRouter);
 
 
 app.use(express.static(__dirname+'/public'));
